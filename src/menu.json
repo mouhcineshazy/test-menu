@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "designplox",
+    "item": "designplox",
+    "submenu": []
+  },
+  {
+    "id": 2,
+    "name": "artists",
+    "item": "artists",
+    "submenu": [
+      {
+        "id": 1,
+        "name": "steve wonder",
+        "item": "steve",
+        "submenu": [
+          {
+            "id": 1,
+            "name": "song one",
+            "item": "song-one",
+            "submenu": []
+          },
+          {
+            "id": 2,
+            "name": "song Two",
+            "item": "songTwo"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tupac",
+        "item": "tupac"
+      },
+      {
+        "id": 3,
+        "name": "DMX",
+        "item": "dmx"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "albums",
+    "item": "albums",
+    "submenu": [
+      {
+        "id": 1,
+        "name": "get your wings",
+        "item": "get-your-wings",
+        "submenu": [
+          {
+            "id": 1,
+            "name": "wings album",
+            "item": "wings-album",
+            "submenu": [
+              {
+                "id": 1,
+                "name": "sub album",
+                "item": "sub-album",
+                "submenu": []
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "the infamous",
+            "item": "infamous",
+            "submenu": [
+              {
+                "id": 1,
+                "name": "hello cali",
+                "item": "hello-cali",
+                "submenu": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "hotel california",
+        "item": "hotel-california",
+        "submenu": [
+          {
+            "id": 1,
+            "name": "mockingbird",
+            "item": "mockingbird",
+            "submenu": [
+              {
+                "id": 1,
+                "name": "hollywood",
+                "item": "hollywood",
+                "submenu": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "physical graffiti",
+        "item": "physical-graffiti",
+        "submenu": [
+          {
+            "id": 1,
+            "name": "houses of the holy",
+            "item": "houses-of-the-holy",
+            "submenu": []
+          },
+          {
+            "id": 2,
+            "name": "in my time of dying",
+            "item": "in-my-time-of-dying",
+            "submenu": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "songs",
+    "item": "songs",
+    "submenu": []
+  },
+  {
+    "id": 5,
+    "name": "genres",
+    "item": "genres",
+    "submenu": []
+  },
+  {
+    "id": 6,
+    "name": "settings",
+    "item": "settings",
+    "submenu": []
+  }
+]
