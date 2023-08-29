@@ -1,39 +1,30 @@
 import data from './menu.json';
 import { Menu } from './Components/Menu';
 import { useState } from 'react';
+import { usePrevious } from '@uidotdev/usehooks';
 
 function App() {
   const [level, setLevel] = useState(1);
-  const [previousItems, setPreviousItems] = useState([]);
   const [currentItems, setCurrentItems] = useState(data);
+  const previous = usePrevious(currentItems);
+
 
   const handlePrevClick = () => {
     const previousLevel = level - 1;
     // this condition is necessary to prevent wrong display of items , whenever we go back to the top level we should clean the the previous items state and assign an empty list
     if (previousLevel === 1) {
-      setPreviousItems([]);
       setCurrentItems(data);
       setLevel(previousLevel);
     } else {
-      const prevItems = previousItems.find(
-        (prev) => prev.level === previousLevel,
-      );
-      if (prevItems) {
+      if (previous) {
         setLevel(previousLevel);
-        setCurrentItems(prevItems.items);
+        setCurrentItems(previous);
       }
     }
   };
 
   const navigateClick = (item) => {
     setLevel((level) => level + 1);
-    setPreviousItems((previousItems) => [
-      ...previousItems,
-      {
-        level,
-        items: currentItems,
-      },
-    ]);
     item.submenu && setCurrentItems(item.submenu);
   };
 
